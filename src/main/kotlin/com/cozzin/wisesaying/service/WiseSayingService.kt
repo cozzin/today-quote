@@ -9,4 +9,8 @@ class WiseSayingService(val repository: WiseSayingRepository) {
     public fun findAll(): List<WiseSaying> {
         return repository.findAll().toList()
     }
+
+    public fun save(wiseSaying: WiseSaying) {
+        repository.save(wiseSaying)
+    }
 }
