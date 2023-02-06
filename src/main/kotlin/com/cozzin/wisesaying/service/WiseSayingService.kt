@@ -5,12 +5,12 @@ import com.cozzin.wisesaying.persistence.WiseSayingRepository
 import org.springframework.stereotype.Service
 
 @Service
-class WiseSayingService(val repository: WiseSayingRepository) {
-    public fun findAll(): List<WiseSaying> {
+class WiseSayingService(private val repository: WiseSayingRepository) {
+    fun findAll(): List<WiseSaying> {
         return repository.findAll().toList()
     }
 
-    public fun save(wiseSaying: WiseSaying) {
+    fun save(wiseSaying: WiseSaying) {
         repository.save(wiseSaying)
     }
 }
