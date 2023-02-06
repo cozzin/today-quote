@@ -6,8 +6,8 @@ import jakarta.persistence.GeneratedValue
 import jakarta.persistence.Id
 
 @Entity
-class WiseSaying(
-        @Id @GeneratedValue private val id: Long?,
+data class WiseSaying(
+        @Id @GeneratedValue val id: Long?,
         @JsonProperty("word") val word: String,
         @JsonProperty("img_url") val imageUrl: String
 )
