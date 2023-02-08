@@ -41,3 +41,35 @@ Transfer-Encoding: chunked
     "userId": "19fac240-13aa-4a52-8d74-aff678acff3a"
 }
 ```
+
+푸시 토큰 저장
+
+```bash
+ ernest.hong@Ernest  ~  http POST localhost:8080/push-tokens user_id=d4bbe853-977c-4ed1-96b7-ec5598afe8e3 push_token=my_token
+HTTP/1.1 201
+Connection: keep-alive
+Content-Length: 0
+Date: Wed, 08 Feb 2023 15:41:33 GMT
+Keep-Alive: timeout=60
+```
+
+푸시 토큰 업데이트
+
+```bash
+ ernest.hong@Ernest  ~  http PUT localhost:8080/push-tokens user_id=d4bbe853-977c-4ed1-96b7-ec5598afe8e3 push_token=my_token
+HTTP/1.1 200
+Connection: keep-alive
+Content-Length: 0
+Date: Wed, 08 Feb 2023 15:41:40 GMT
+Keep-Alive: timeout=60
+```
+
+없는 user_id로 요청했을 때는 204(NO_CONTENT) 응답
+
+```bash
+ ernest.hong@Ernest  ~  http PUT localhost:8080/push-tokens user_id=d4bbe853-977c-4ed1-96b7-ec5598afe8e push_token=my_token
+HTTP/1.1 204
+Connection: keep-alive
+Date: Wed, 08 Feb 2023 15:41:46 GMT
+Keep-Alive: timeout=60
+```
