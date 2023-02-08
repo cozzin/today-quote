@@ -1,7 +1,7 @@
-package com.cozzin.wisesaying.controller
+package com.cozzin.todayquote.controller
 
-import com.cozzin.wisesaying.persistence.WiseSaying
-import com.cozzin.wisesaying.service.WiseSayingService
+import com.cozzin.todayquote.persistence.WiseSaying
+import com.cozzin.todayquote.service.WiseSayingService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping

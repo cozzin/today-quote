@@ -1,4 +1,4 @@
-package com.cozzin.wisesaying.persistence
+package com.cozzin.todayquote.persistence
 
 import org.springframework.data.repository.CrudRepository
 

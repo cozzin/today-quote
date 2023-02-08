@@ -1,7 +1,7 @@
-package com.cozzin.wisesaying.service
+package com.cozzin.todayquote.service
 
-import com.cozzin.wisesaying.persistence.WiseSaying
-import com.cozzin.wisesaying.persistence.WiseSayingRepository
+import com.cozzin.todayquote.persistence.WiseSaying
+import com.cozzin.todayquote.persistence.WiseSayingRepository
 import org.springframework.stereotype.Service
 
 @Service
