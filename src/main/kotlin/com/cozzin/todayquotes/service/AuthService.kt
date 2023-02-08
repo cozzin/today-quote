@@ -1,4 +1,4 @@
-package com.cozzin.todayquote.service
+package com.cozzin.todayquotes.service
 
 import org.springframework.stereotype.Service
 

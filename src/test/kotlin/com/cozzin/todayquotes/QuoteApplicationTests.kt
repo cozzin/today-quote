@@ -1,10 +1,10 @@
-package com.cozzin.todayquote
+package com.cozzin.todayquotes
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class WiseSayingApplicationTests {
+class QuoteApplicationTests {
 
 	@Test
 	fun contextLoads() {

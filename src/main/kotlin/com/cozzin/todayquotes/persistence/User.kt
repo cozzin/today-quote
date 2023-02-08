@@ -1,4 +1,4 @@
-package com.cozzin.todayquote.persistence
+package com.cozzin.todayquotes.persistence
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import jakarta.persistence.Entity

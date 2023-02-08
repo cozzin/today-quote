@@ -1,7 +1,7 @@
-package com.cozzin.todayquote.controller
+package com.cozzin.todayquotes.controller
 
-import com.cozzin.todayquote.persistence.WiseSaying
-import com.cozzin.todayquote.service.WiseSayingService
+import com.cozzin.todayquotes.persistence.Quote
+import com.cozzin.todayquotes.service.QuoteService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -10,21 +10,21 @@ import org.springframework.web.bind.annotation.ResponseStatus
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class WiseSayingController(private val service: WiseSayingService) {
+class QuoteController(private val service: QuoteService) {
 
     @GetMapping("/")
     fun helloWorld(): String {
         return "hello world"
     }
 
-    @GetMapping("/sayings")
-    fun findAll(): List<WiseSaying> {
+    @GetMapping("/quotes")
+    fun findAll(): List<Quote> {
         return service.findAll()
     }
 
-    @PostMapping("/sayings")
+    @PostMapping("/quotes")
     @ResponseStatus(HttpStatus.CREATED)
-    fun save(@RequestBody wiseSaying: WiseSaying) {
-        service.save(wiseSaying)
+    fun save(@RequestBody quote: Quote) {
+        service.save(quote)
     }
 }

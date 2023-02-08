@@ -1,6 +1,6 @@
-package com.cozzin.todayquote
+package com.cozzin.todayquotes
 
-import com.cozzin.todayquote.persistence.User
+import com.cozzin.todayquotes.persistence.User
 import org.junit.jupiter.api.Test
 
 class UserTest {
