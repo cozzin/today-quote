@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest
 class QuoteApplicationTests {
 
 	@Test
-	fun contextLoads() {
-	}
+	fun quotes() {
 
+	}
 }
