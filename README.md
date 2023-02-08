@@ -1,4 +1,4 @@
-# wise-saying
+# today-quote
 
 ## 1주차 (2022/02/02)
 - 연습 데이터
