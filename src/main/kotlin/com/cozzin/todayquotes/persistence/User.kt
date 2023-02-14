@@ -9,6 +9,9 @@ import jakarta.persistence.Id
 
 @Entity(name = "actor")
 data class User(
-    @Id @GeneratedValue(strategy = GenerationType.UUID) var userId: String? = null,
+    @Id @GeneratedValue(strategy = GenerationType.UUID) var internalUserId: String? = null,
     @Column(unique = true) @JsonProperty("device_id") val deviceId: String
-)
+) {
+    val userId: String
+        get() = internalUserId ?: throw NullPointerException()
+}
